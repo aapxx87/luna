@@ -1,6 +1,6 @@
 
-const CACHE = 'luna-shell-de32bef3632036ca';
-const ASSETS = ["assets/index-CDpEZTDE.css","assets/index-CbzPfvWh.js","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/icon.svg","index.html","manifest.webmanifest"];
+const CACHE = 'luna-shell-895a1368cfa3a533';
+const ASSETS = ["assets/index-CnEgpDFj.css","assets/index-D-iKsF_I.js","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/icon.svg","index.html","manifest.webmanifest"];
 const scope = self.registration.scope;
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS.map(path => new URL(path, scope).href))));
